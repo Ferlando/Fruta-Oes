@@ -1,0 +1,175 @@
+%!TEX root = ../Dissertation.tex
+
+\documentclass[12pt, parskip=half]{article} 
+%=========================Preamble===================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} %font encoding
+\usepackage{mathptmx}    %adobe times roman font
+\usepackage{xstring}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{refcount}
+\usepackage{amsmath,amssymb,amsfonts} %ams packages for math
+\usepackage{setspace} %for line spacing
+\usepackage[top=2cm,bottom=2.6cm,left=2.6cm,right=2.6cm]{geometry} %for margins
+\usepackage{graphicx}\graphicspath{{Graphics/}} %to add images
+\usepackage{subcaption} %for subfig.
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{emptypage}
+\usepackage{booktabs,multirow,bigstrut,colortbl}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1}
+\usepackage{tabulary}
+\usepackage[activate]{microtype}
+\usepackage{threeparttable}
+\usepackage{dblfloatfix}
+\usepackage[sort&compress,numbers]{natbib} %format bibliography
+\bibliographystyle{vancouver}
+\renewcommand{\bibname}{References}
+\usepackage{titlesec,xcolor}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage[intoc,refpage]{nomencl}\makenomenclature %for list of symbols
+\renewcommand{\nomname}{List of Symbols}
+\renewcommand{\pagedeclaration}[1]{\dotfill\hyperpage{#1}}
+
+\usepackage[nottoc]{tocbibind} %adds ref and ind in toc
+\usepackage[toc,page]{appendix} %creats a new page for appendices title
+\usepackage{varioref}
+\usepackage[hidelinks]{hyperref} %creats the links
+\usepackage[noabbrev]{cleveref}
+\usepackage{fancyhdr}%\pagestyle{fancy} %for fancy headers and footers
+%\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{tocloft}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithm
+%\PassOptionsToPackage{noend}{algpseudocode}% comment out if want end's to show
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+
+\renewcommand{\appendixtocname}{Appendices}
+\renewcommand{\appendixpagename}{\vspace*{\fill}\centering Appendices\vspace*{\fill}}
+
+%           Defining colors for sticky notes:
+%_______________________________________________________________
+% Yellow:
+\definecolor{BgYellow}{HTML}{FFF59C}
+\definecolor{FrameYellow}{HTML}{F7A600}
+
+% Defining Sticky note box:
+\newtcolorbox{StickyNote}[1][]{%
+	enhanced,
+	before skip=2mm,after skip=2mm, 
+	width=1\textwidth, boxrule=0.2mm, % width of the sticky note
+	colback=BgYellow, colframe=FrameYellow, % Colors
+	attach boxed title to top left={xshift=0cm,yshift*=0mm-\tcboxedtitleheight},
+	varwidth boxed title*=-1cm,
+	% The titlebox:
+	boxed title style={frame code={%
+			\path[left color=FrameYellow,right color=FrameYellow,
+			middle color=FrameYellow]
+			([xshift=-0mm]frame.north west) -- ([xshift=0mm]frame.north east)
+			[rounded corners=0mm]-- ([xshift=0mm,yshift=0mm]frame.north east)
+			-- (frame.south east) -- (frame.south west)
+			-- ([xshift=0mm,yshift=0mm]frame.north west)
+			[sharp corners]-- cycle;
+		},interior engine=empty,
+	},
+	sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+	% The "folded paper" in the bottom right corner:
+	underlay={%
+		\path[fill=BgYellow!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+		\path[draw=FrameYellow,shorten <=-0.05mm,shorten >=-0.05mm,color=FrameYellow] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+	},
+	drop fuzzy shadow, % Shadow
+	fonttitle=\bfseries, 
+	title={#1}
+}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Code}
+\renewcommand{\lstlistlistingname}{List of Code Sections}
+
+%\lstloadlanguages{C,C++,csh,Java}
+
+\definecolor{red}{rgb}{0.6,0,0} 
+\definecolor{blue}{rgb}{0,0,0.6}
+\definecolor{green}{rgb}{0,0.4,0}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{cloudwhite}{rgb}{0.9412, 0.9608, 0.8471} 
+\definecolor{gainsboro}{rgb}{0.99, 0.99, 0.99}
+\definecolor{rose}{cmyk}{0,0.26,0.38,0}
+\lstset{
+	language=csh,
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	tabsize=2,
+	extendedchars=true,
+	breaklines=true,
+	frame=b,
+	stringstyle=\color{rose},
+	showspaces=false,
+	showtabs=false,
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	commentstyle=\color{green},
+	morecomment=[l]{//}, %use comment-line-style!
+	morecomment=[s]{/*}{*/}, %for multiline comments
+	showstringspaces=false,
+	morekeywords={ abstract, event, new, struct,
+		as, explicit, null, switch, def,
+		base, extern, object, this,
+		bool, false, operator, throw,
+		break, finally, out, true,
+		byte, fixed, override, try,
+		case, float, params, typeof,
+		catch, for, private, uint,
+		char, foreach, protected, ulong,
+		checked, goto, public, unchecked,
+		class, if, readonly, unsafe,
+		const, implicit, ref, ushort,
+		continue, in, return, using,
+		decimal, int, sbyte, virtual,
+		default, interface, sealed, volatile,
+		delegate, internal, short, void,
+		do, is, sizeof, while,
+		double, lock, stackalloc,
+		else, long, static,
+		enum, namespace, string},
+	keywordstyle=\color{blue},
+	identifierstyle=\color{cyan},
+	backgroundcolor=\color{gainsboro},
+}
+
+\DeclareCaptionFont{black}{\color{black}}
+\DeclareCaptionFormat{listing}{\colorbox{gray!12}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=black,textfont=black, singlelinecheck=true, margin=0pt, font={bf,footnotesize}}
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\contentsname}{Table of Contents}
+
+%New Commands
+\newcommand{\namesigdate}[2][1.5cm]{%	
+	\begin{tabular}{@{}p{#1}@{}}
+		#2 \\\fromsig{\includegraphics[scale=0.3]{signature.png}} \hrule
+		{\small \textit{signature}}
+		
+	\end{tabular}
+}
+%------------
+\raggedbottom	

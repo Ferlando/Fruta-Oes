@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: IPEB3 Project Report.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: vancouver.bst
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: Preliminary-pages/proposaltitle.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: Preliminary-pages/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: Preliminary-pages/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Main-pages/chapter1.aux
+Illegal, another \bibstyle command---line 28 of file IPEB3 Project Report.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Main-pages/app1.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: Main-pages/mybib.bib
+Warning--entry type for "raisingRobots" isn't style-file defined
+--line 47 of file Main-pages/mybib.bib
+Warning--empty author and editor in raisingRobots
+Warning--missing publisher in raisingRobots
+You've used 4 entries,
+            3507 wiz_defined-function locations,
+            715 strings with 5464 characters,
+and the built_in function-call counts, 3413 in all, are:
+= -- 416
+> -- 24
+< -- 0
++ -- 12
+- -- 6
+* -- 238
+:= -- 397
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 316
+empty$ -- 340
+format.name$ -- 8
+if$ -- 816
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 26
+newline$ -- 22
+num.names$ -- 4
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 61
+stack$ -- 0
+substring$ -- 505
+swap$ -- 54
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 20
+width$ -- 5
+write$ -- 42
+(There was 1 error message)

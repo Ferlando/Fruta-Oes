@@ -1,0 +1,272 @@
+%%================app1======================================
+\vspace{-15mm}
+\section{Library importing and Device Setup}\label{app:app1}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Library importing and Device Setup}, label=Initialization]
+	#!/usr/bin/env python3
+	import ev3dev.ev3 as ev3
+	from ev3dev.ev3 import * #to allow the use of brick buttons
+	import math #importing Math Library to allow usage of Mathematical functions
+	import ColorSensor2 #importing Color sensor library
+	from time import sleep #importing time library
+	import time
+	#-----------------------------------------------------------------
+	#Device Connections start
+	# Connect the outputs to the motor
+	motor_left = ev3.LargeMotor('outA')     
+	motor_right = ev3.LargeMotor('outD')
+	gripper_motor = ev3.MediumMotor('outC')
+	
+	#Gyro Sensor initialisation
+	gy = ev3.GyroSensor()
+	
+	#Colour Sensor initialisation
+	cl= ColorSensor2.ColorSensor2()
+	cl.mode='COL-COLOR'
+	
+	#Ultra-Sonic Sensor initialisation
+	us = ev3.UltrasonicSensor() 
+	us.mode='US-DIST-CM'
+	
+	btn = Button() #activate the use of brick buttons
+	
+	#Global Variables (we know use of global variables is not a good practice, but in this case it is necessary)
+	harvested = 0  #keeping count of the harvested fruits
+	total_distance = 0  #keeping track of the distance travelled by the robot
+	gripper_opened = True   #keeping track of the state of the gripper
+	thetha = None   #To avoid the scanning angle from exceeding the limits
+	start = 0   #Variable to start the 5 minute timer
+	end = 0 #Variable to end the 5 minute timer
+	current_time = 0    #Variable to track the current time
+	#Device Connections ends
+\end{lstlisting}
+
+
+\section{User Menu for Selecting the Colour}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={User Menu for Selecting the Colour}, label=menu]
+def menu():
+#Function to select the desired fruit using the buttons from the Brick
+global start    
+ev3.Sound.speak("Select the colour from the buttons after the beep").wait() 
+sleep(3)
+Sound.beep().wait()
+start = time.time() #Starting the timer
+while True:
+if btn.any():# Checks if any button is pressed.
+button_id = btn.buttons_pressed
+print(button_id[0])
+break
+else:
+sleep(0.01)
+
+option_text = " I will search for {0}" #Robot confirming the colour
+ev3.Sound.speak(option_text.format(fruit_dict.get(button_id[0]))).wait() 
+return fruit_dict.get(button_id[0]) #Returning the desired fruit
+\end{lstlisting}
+
+\section{Function for turning left}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for turning left}, label=leftTurn]
+def turn_left(speed,angle):
+#Function that turns left, it requires the turning speed and the angle it must turn
+gy.mode = 'GYRO-RATE'
+gy.mode = 'GYRO-ANG'
+sleep(1)
+while gy.value()>-angle:
+motor_left.run_forever(speed_sp=-speed, stop_action = 'hold')
+motor_right.run_forever(speed_sp=speed, stop_action = 'hold')
+#print(gy.value())
+motor_left.stop()
+motor_right.stop()
+\end{lstlisting}
+
+\section{Function for turning right}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for turning right}, label=rightTurn]
+def turn_right(speed,angle):
+#Function that turns right, it requires the turning speed and the angle it must turn
+gy.mode = 'GYRO-RATE'
+gy.mode = 'GYRO-ANG'
+sleep(1)
+while gy.value()<angle:
+motor_left.run_forever(speed_sp=speed, stop_action = 'hold')
+motor_right.run_forever(speed_sp=-speed, stop_action = 'hold')
+#print(gy.value())
+motor_left.stop()
+motor_right.stop()
+\end{lstlisting}
+
+\section{Function for moving the robot forward}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for moving the robot forward}, label=moveDistance]
+def move_distance_in_mm(distance_mm):
+#Function to move a specified distance, it transforms rotation of the wheels to distance.
+dist = (distance_mm/1000) * (360/0.176)
+motor_left.run_to_rel_pos(position_sp = dist, speed_sp=400, stop_action = "brake")
+motor_right.run_to_rel_pos(position_sp = dist, speed_sp=400, stop_action = "brake")
+motor_left.wait_while('running')
+motor_right.wait_while('running')
+motor_left.stop()
+motor_right.stop()
+\end{lstlisting}
+\newpage
+\section{Function for moving the robot from Acre to Home-Zone}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for moving the robot from Acre to Home-Zone}, label=driveToHomeZone]
+def drive_to_home_zone(hypotenuse, current_angle, add):
+#Function to drive to the home zone from the Acre with a correct fruit.
+global total_distance, harvested, start, end, current_time
+distance = abs(hypotenuse*(math.sin(math.radians(current_angle)))) #Using Pythagorean theorem to calculate the distance from the fruit to the home-zone
+total_distance += abs(hypotenuse*(math.cos(math.radians(current_angle)))) #Adding the distance moved forward to the total for returning to the starting point
+turn_right(100,current_angle + 85) #turning right 90 degrees (we used 85 because the Gyro-sensor was not accurate)
+gy.mode = 'GYRO-RATE'
+gy.mode = 'GYRO-ANG'
+sleep(1)
+move_distance_in_mm(abs(distance + add)) 
+gripper("open") #Open the gripper to release the fruit in the home-zone
+harvested += 1  #keeping count of the harvested fruits
+move_distance_in_mm(-add) #returning to the main-line
+turn_left(200,85) #Turning left to continue searching
+end = time.time()
+current_time += (end - start) #Checking the current time
+\end{lstlisting}
+
+\section{Function for moving the robot from Acre to Main-Line}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for moving the robot from Acre to Main-Line}, label=driveFromAcreToLine]
+def drive_from_acre_to_line(hypotenuse, current_angle):
+#Function to drive to the main-line from the Acre without any fruit.
+global total_distance, start, end, current_time
+distance = abs(hypotenuse*(math.sin(math.radians(current_angle))))
+print(distance)
+turn_left(1000, 80) #moving a wrong fruit away so that it cannot be detected again.
+sleep(1)
+turn_right(200,current_angle) #turning the robot perpendicular to the main line after moving a wrong fruit.
+total_distance += abs(hypotenuse*(math.cos(math.radians(current_angle)))) #Adding the distance moved forward to the total for returning to the starting point
+gy.mode = 'GYRO-RATE'
+gy.mode = 'GYRO-ANG'
+sleep(1)
+move_distance_in_mm(-abs(distance)) #Reversing the robot to the main-line
+\end{lstlisting}
+
+\section{Function for operating the Gripper}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for operating the Gripper}, label=gripper]
+def gripper(command):
+#Function to open and close the gripper using the Medium Motor
+global gripper_opened
+if (command == "close" and gripper_opened == True):
+gripper_motor.run_to_rel_pos(speed_sp=150, position_sp=230, stop_action = 'brake') # closing
+sleep(2)
+gripper_opened = False
+elif (command == "open" and gripper_opened == False):
+gripper_motor.run_to_rel_pos(speed_sp=250, position_sp=-210, stop_action = 'brake') #opening
+gripper_motor.wait_while('running')
+gripper_opened = True
+\end{lstlisting}
+
+\section{Function for Searching the fruits}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Function for Searching the fruits}, label=scanning]
+def scanning():
+#Function for scanning the acre for nearby fruits
+global total_distance, start, end, current_time, thetha
+gy.mode = 'GYRO-RATE'
+gy.mode = 'GYRO-ANG'
+sleep(1)
+search_space = 1500 #scanning for fruits withing 1.5m (Width of the acre)
+scanning_speed = 50 
+dist = us.value() #Storing the distance given by the Ultra-Sonic sensor
+while(dist > search_space or thetha == None): #Only detect fruits which are withing the search space
+while(dist > search_space and gy.value()>-85): #It scans turning left 90 degrees
+motor_left.run_forever(speed_sp=-scanning_speed, stop_action = 'hold')
+motor_right.run_forever(speed_sp=scanning_speed, stop_action = 'hold')
+dist = us.value() #Distance at which the fruit is detected
+motor_left.stop()
+motor_right.stop()
+
+while(dist > search_space and gy.value()<-5): #it scans turning right 90 degrees
+motor_left.run_forever(speed_sp=scanning_speed, stop_action = 'hold')
+motor_right.run_forever(speed_sp=-scanning_speed, stop_action = 'hold')
+dist = us.value() #Distance at which the fruit is detected
+motor_left.stop()
+motor_right.stop()
+
+thetha = gy.value() #Angle at which the fruit is detected
+dist =us.value() #Distance at which the fruit is detected
+
+if(dist > search_space): # If no fruits detected, advance the robot 20 cm
+move_distance_in_mm(200)
+total_distance += 200 #Adding the distance moved forward to the total for returning to the starting point
+
+end = time.time()
+current_time += (end - start) #Checking the current time
+
+while(us.value() < search_space): #optimizing the exact angle at which the fruit is detected, turn the robot until the fruit is lost/no_longer_detected
+motor_left.run_forever(speed_sp=-50, stop_action = 'hold')
+motor_right.run_forever(speed_sp=50, stop_action = 'hold')    
+motor_left.stop()
+motor_right.stop()
+alpha = gy.value() - thetha #Angle at which the fruit is lost when turning
+
+while (gy.value()< (thetha + (alpha/2))): #Aligning the robot with the center of the fruit
+motor_left.run_forever(speed_sp=50, stop_action = 'hold')
+motor_right.run_forever(speed_sp=-50, stop_action = 'hold')
+motor_left.stop()
+motor_right.stop()
+
+if(dist > 500): #If the fruit is more than 0.5m away, the robot must stop halfway and scan again.
+move_distance_in_mm(dist/2)
+while(us.value() < search_space):
+motor_left.run_forever(speed_sp=-50, stop_action = 'hold')
+motor_right.run_forever(speed_sp=50, stop_action = 'hold')    
+motor_left.stop()
+motor_right.stop()
+alpha = gy.value() - thetha
+
+while (gy.value()< (thetha + (alpha/2))):
+motor_left.run_forever(speed_sp=50, stop_action = 'hold')
+motor_right.run_forever(speed_sp=-50, stop_action = 'hold')
+motor_left.stop()
+motor_right.stop()
+move_distance_in_mm(dist/2+10)
+else:
+move_distance_in_mm(dist+10) #Moving forward 1cm more to force the fruit to be below the colour sensor
+
+sleep(1)
+gripper('close') #Closing the gripper to allow colour sensing function
+
+if (cl.getCalibratedColorString() == fruit): #if the sensored fruit is correct
+ev3.Sound.speak("Right")
+drive_to_home_zone(dist, abs(gy.value()), 300) #Drive it to the Home-zone
+else:
+ev3.Sound.speak("wrong") #if the sensored fruit is wrong
+gripper('open') #open the gripper
+drive_from_acre_to_line(dist, abs(gy.value())) #move the fruit away   
+turn_right(200,85)
+end = time.time()
+current_time += (end - start) #Checking the current time
+\end{lstlisting}
+
+\section{Main Code}
+\vspace{-7mm}
+\begin{lstlisting}[language={python}, caption={Main Code}, label=main]
+fruit_dict ={   #Declaring the available fruits
+	#Dictionary of all possible fruits (Coloured cubes) in the competition and corresponding selection button on the EV3 brick
+	'up':"Red", 
+	"right":"Green",
+	"left":"Blue",
+	"down":"Yellow",
+}
+
+fruit = menu() #Storing the desired fruit
+
+while (harvested<2  and current_time<300): #when it reaches 300s (5 minutes) or when it harvested 2 fruits, it must come back to the starting point
+scanning()
+if(total_distance >= 4000): #If the robot drove the whole length of the acre, it must return to the starting point and scan again
+move_distance_in_mm(-total_distance)
+total_distance = 0
+
+move_distance_in_mm(-total_distance) #Reversing the robot back to the starting Position
+\end{lstlisting}

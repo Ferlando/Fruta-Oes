@@ -1,0 +1,73 @@
+Indian Institute of Technology Bombay (ChE) Thesis LaTeX Class
+
+by Chandra Has, 2016 
+
+This class file enables to write thesis, seminar report,
+dissertations, or any other type of report which should fullfill
+the requirements of the graduate school at several institutes.  
+In addition to the designed class, an example thesis is included 
+which gives a brief introduction about LaTeX and the usage of the
+style class in particular. 
+
+If you are new to LaTeX, it is suggested to make two copies of the example
+files. Keep one as a reference and do editing in other by removing the
+example text and replacing it with your own contents. This will help you not 
+only learning LaTeX but also to write your thesis relatively in less time.
+
+If you are already aware to LaTeX but want to learn more then this class file
+can help a lot to write your own class files.
+
+Instructions for using:
+  1) Find the whole folder and unpack the zip archive.  
+  2) run latex on Thesis.tex
+      UNIX/Linux: $ latex Thesis <return>
+      Windows: load Thesis.tex and click PdfLaTeX button
+                (assumes TeXstudio or TeXmaker/MikTex)
+  3) run bibtex to generate bibliography info:
+      UNIX/Linux: $ bibtex Thesis <return>
+      Windows: click BibTeX button.
+  4) run latex two more times (see above)
+  5) view pdf output
+      UNIX/Linux: $ pdf mythesis & (the '&' places the viewer in the background)
+      Windows: click at the viewer button.
+
+Good Luck!
+
+Has C.
+
+
+
+File List:
+Name			Description
+chthes.cls		LaTeX2e thesis class file (version v1.0 in 2016, new version v1.1 released in 2019, paragraph indentation problem is resolved)
+fncystyle.sty		LaTeX2e chapter style file
+
+
+Thesis.tex  		Thesis root file (run LaTeX on this file)
+dec.tex                 Thesis declaration
+ack.tex                 Acknowledgements
+abs.tex    	        Thesis abstract 
+intro.tex        	A thesis chapter
+lit.tex          	A thesis chapter
+exp.tex             	A thesis chapter
+res.tex            	A thesis chapter   
+conc.tex       		A thesis chapter
+app1.tex         	A thesis appendix
+app2.tex          	A thesis appendix
+pub.tex          	Publications
+mybib.bib   		The BibTeX reference library
+
+README			This file
+
+source.zip 		The zip archive you unpacked
+
+Acknowledgements:
+The \texttt{chthes} class file is based on the IITB thesis file
+written by Prof. P. SUnthar and edited by Chandra Has. 
+
+License:
+
+       "Pack
+
+
+Cheers !

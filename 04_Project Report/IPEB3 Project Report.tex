@@ -1,0 +1,114 @@
+
+\input{Preliminary-pages/header}
+%\includeonly{Preliminary-pages/proposaltitle,%
+	%Preliminary-pages/copyright,%
+	%Preliminary-pages/dedication,%
+    %Preliminary-pages/certificate,%
+    %Preliminary-pages/acknowledgements,%
+    %Preliminary-pages/declaration,%
+    %Preliminary-pages/abstract,%
+    %Main-pages/chapter1}%Main-pages/chapter2,Main-pages/chapter3,Main-pages/app1,Main-pages/pub}
+%=======================================================================
+\begin{document}
+
+%========================preliminary pages============================
+\pagenumbering{roman}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{Last Review: \today}
+\rfoot{Page \thepage}
+%%\pagestyle{plain}
+\onehalfspacing
+%-----------------
+
+\include{Preliminary-pages/proposaltitle}
+\include{Preliminary-pages/declaration}
+\include{Preliminary-pages/abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+%\listofappendices
+%\lstlistoflistings
+\clearpage
+%\singlespacing
+%\listoffigures
+%\listoftables
+
+\printnomenclature[5cm]
+
+%==========================main pages=================================
+%\mainmatter
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{Last Review: \today}
+\rfoot{Page \thepage \ of \pageref{LastPage}}
+
+%\doublespacing
+%-----------------------
+
+\include{Main-pages/chapter1}
+%\include{Main-pages/chapter2}	
+%\include{Main-pages/chapter3}	
+%\include{Main-pages/chapter4}	
+%\include{Main-pages/chapter5}	
+
+\onehalfspacing
+\bibliographystyle{plainnat}	
+\bibliography{Main-pages/mybib}
+~\\
+\noindent Note: diagrams and graphs are works of the report authors. Specifically, drawings are created using Microsoft Viso Professional 2019 and Autodesk Inventor Student version 2023, algorithms are constructed using the \LaTeX~"algpseudocode" package, and Code appendices are constructed using the \LaTeX~"listings" package (with data obtained from MATLAB\textsuperscript{\tiny\textregistered} R2016a Simulink). No work done by other persons is presented as that of the report author.
+%\appendices
+\newpage
+\pagestyle{plain}
+\begin{appendices}
+\include{Main-pages/app1}			
+\end{appendices}
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
