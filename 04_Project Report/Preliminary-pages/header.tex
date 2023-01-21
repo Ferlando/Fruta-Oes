@@ -1,4 +1,4 @@
-%!TEX root = ../Dissertation.tex
+%!TEX root = ../IPEB3 Project Report.tex
 
 \documentclass[12pt, parskip=half]{article} 
 %=========================Preamble===================================
@@ -61,6 +61,14 @@
 \definecolor{BgYellow}{HTML}{FFF59C}
 \definecolor{FrameYellow}{HTML}{F7A600}
 
+% Green:
+\definecolor{BgGreen}{HTML}{C7D92D}
+\definecolor{FrameGreen}{HTML}{89B23B}
+
+% Blue:
+\definecolor{BgBlue}{HTML}{45BEE9}
+\definecolor{FrameBlue}{HTML}{31A8C9}
+
 % Defining Sticky note box:
 \newtcolorbox{StickyNote}[1][]{%
 	enhanced,
@@ -91,6 +99,67 @@
 	title={#1}
 }
 
+% Blue Sticky Note (BStkyNote):
+\newtcolorbox{BStkyNote}[1][]{%
+	enhanced,
+	before skip=2mm,after skip=2mm, 
+	width=1\textwidth, % width of the sticky note
+	boxrule=0.2mm,
+	colback=BgBlue, colframe=FrameBlue, % Colors
+	attach boxed title to top left={xshift=0cm,yshift*=0mm-\tcboxedtitleheight},
+	varwidth boxed title*=-3cm,
+	% The titlebox:
+	boxed title style={frame code={%
+			\path[left color=FrameBlue,right color=FrameBlue,
+			middle color=FrameBlue]
+			([xshift=-0mm]frame.north west) -- ([xshift=0mm]frame.north east)
+			[rounded corners=0mm]-- ([xshift=0mm,yshift=0mm]frame.north east)
+			-- (frame.south east) -- (frame.south west)
+			-- ([xshift=0mm,yshift=0mm]frame.north west)
+			[sharp corners]-- cycle;
+		},interior engine=empty,
+	},
+	sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+	% The "folded paper" in the bottom right corner:
+	underlay={%
+		\path[fill=BgBlue!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+		\path[draw=FrameBlue,shorten <=-0.05mm,shorten >=-0.05mm,color=FrameBlue] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+	},
+	drop fuzzy shadow, % Shadow
+	fonttitle=\bfseries, 
+	title={#1}
+}
+
+% Green Sticky Note (GStkyNote):
+\newtcolorbox{GStkyNote}[1][]{%
+	enhanced,
+	before skip=2mm,after skip=2mm, 
+	width=1\textwidth, % width of the sticky note
+	boxrule=0.2mm,
+	colback=BgGreen, colframe=FrameGreen, % Colors
+	attach boxed title to top left={xshift=0cm,yshift*=0mm-\tcboxedtitleheight},
+	varwidth boxed title*=-3cm,
+	% The titlebox:
+	boxed title style={frame code={%
+			\path[left color=FrameGreen,right color=FrameGreen,
+			middle color=FrameGreen]
+			([xshift=-0mm]frame.north west) -- ([xshift=0mm]frame.north east)
+			[rounded corners=0mm]-- ([xshift=0mm,yshift=0mm]frame.north east)
+			-- (frame.south east) -- (frame.south west)
+			-- ([xshift=0mm,yshift=0mm]frame.north west)
+			[sharp corners]-- cycle;
+		},interior engine=empty,
+	},
+	sharp corners,rounded corners=southeast,arc is angular,arc=3mm,
+	% The "folded paper" in the bottom right corner:
+	underlay={%
+		\path[fill=BgGreen!80!black] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+		\path[draw=FrameGreen,shorten <=-0.05mm,shorten >=-0.05mm,color=FrameGreen] ([yshift=3mm]interior.south east)--++(-0.4,-0.1)--++(0.1,-0.2);
+	},
+	drop fuzzy shadow, % Shadow
+	fonttitle=\bfseries, 
+	title={#1}
+}
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Code}
 \renewcommand{\lstlistlistingname}{List of Code Sections}

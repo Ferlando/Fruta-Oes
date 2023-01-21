@@ -6,29 +6,41 @@
 \contentsline {subsection}{\numberline {2.2}Gripper and Colour Sensing Module}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Drive Base}{5}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Software Design}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Main Code}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}User Menu for Selecting the Colour (fruit)}{7}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Agile Software Engineering}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Project Setup}{8}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Project Vision}{8}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}SCRUM Team}{8}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Product Backlog}{9}{subsubsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.2}Sprint 1}{10}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Goals of the sprint}{10}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Burn-down Chart}{10}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Sprint 2}{11}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Goals of the sprint}{11}{subsubsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.4}Sprint 3}{11}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Recommendations and Conclusion}{11}{section.5}%
-\contentsline {section}{References}{12}{section.5}%
-\contentsline {section}{Appendices}{13}{section*.21}%
-\contentsline {section}{\numberline {A}Library importing and Device Setup}{14}{appendix.a.A}%
-\contentsline {section}{\numberline {B}User Menu for Selecting the Colour}{15}{appendix.a.B}%
-\contentsline {section}{\numberline {C}Function for turning left}{15}{appendix.a.C}%
-\contentsline {section}{\numberline {D}Function for turning right}{16}{appendix.a.D}%
-\contentsline {section}{\numberline {E}Function for moving the robot forward}{16}{appendix.a.E}%
-\contentsline {section}{\numberline {F}Function for moving the robot from Acre to Home-Zone}{17}{appendix.a.F}%
-\contentsline {section}{\numberline {G}Function for moving the robot from Acre to Main-Line}{17}{appendix.a.G}%
-\contentsline {section}{\numberline {H}Function for operating the Gripper}{18}{appendix.a.H}%
-\contentsline {section}{\numberline {I}Function for Searching the fruits}{18}{appendix.a.I}%
-\contentsline {section}{\numberline {J}Main Code}{20}{appendix.a.J}%
+\contentsline {subsection}{\numberline {3.1}Task Solution}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Main Code}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}User Menu for Selecting the Colour (fruit)}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Driving from Acre to Main line and Home Zone}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Scanning Function and Ultra-Sonic Sensor Optimization}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Analysis: Plan how to tackle the problem}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Project Setup}{12}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Project Vision}{12}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}SCRUM Team}{12}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Product Backlog}{13}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Sprint 1}{13}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Goals of the sprint}{13}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Burn-down Chart}{14}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Test: expected and actual results, bug fixing.}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Sprint 2}{15}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Goals of the sprint}{15}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Burn-down Chart}{15}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Test: expected and actual results, bug fixing.}{16}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Product Backlog}{16}{subsubsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.5}Sprint 3}{17}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Goals of the sprint}{17}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Burn-down Chart}{17}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Test: expected and actual results, bug fixing.}{17}{subsubsection.4.5.3}%
+\contentsline {section}{\numberline {5}Discussion and reflection}{18}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Results of the sprint retrospectives}{18}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Final discussion}{18}{subsection.5.2}%
+\contentsline {section}{References}{18}{subsection.5.2}%
+\contentsline {section}{Appendices}{19}{section*.29}%
+\contentsline {section}{\numberline {A}Library importing and Device Setup}{20}{appendix.a.A}%
+\contentsline {section}{\numberline {B}User Menu for Selecting the Colour}{21}{appendix.a.B}%
+\contentsline {section}{\numberline {C}Function for turning left}{21}{appendix.a.C}%
+\contentsline {section}{\numberline {D}Function for turning right}{22}{appendix.a.D}%
+\contentsline {section}{\numberline {E}Function for moving the robot forward}{22}{appendix.a.E}%
+\contentsline {section}{\numberline {F}Function for moving the robot from Acre to Home-Zone}{23}{appendix.a.F}%
+\contentsline {section}{\numberline {G}Function for moving the robot from Acre to Main-Line}{23}{appendix.a.G}%
+\contentsline {section}{\numberline {H}Function for operating the Gripper}{24}{appendix.a.H}%
+\contentsline {section}{\numberline {I}Function for Searching the fruits}{24}{appendix.a.I}%
+\contentsline {section}{\numberline {J}Main Code}{26}{appendix.a.J}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.4)  18 JAN 2023 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.4)  21 JAN 2023 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1354,7 +1354,7 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 12
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 .
 (C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1368,27 +1368,27 @@ LaTeX Warning: Unused global option(s):
 (Main-pages/chapter1.aux) (Main-pages/app1.aux))
 \openout1 = `"IPEB3 Project Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 12.
+(lastpage)             ! on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1455,18 +1455,18 @@ Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 12.
-Package microtype Info: Applying patch `item' on input line 12.
-Package microtype Info: Applying patch `toc' on input line 12.
-Package microtype Info: Applying patch `eqnum' on input line 12.
-Package microtype Info: Applying patch `footnote' on input line 12.
+LaTeX Info: Redefining \microtypecontext on input line 11.
+Package microtype Info: Applying patch `item' on input line 11.
+Package microtype Info: Applying patch `toc' on input line 11.
+Package microtype Info: Applying patch `eqnum' on input line 11.
+Package microtype Info: Applying patch `footnote' on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 12.
+LaTeX Info: Redefining \showhyphens on input line 11.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1478,8 +1478,8 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package tocbasic Info: usage of `tocbibind' detected on input line 12.
-Package hyperref Info: Link coloring OFF on input line 12.
+Package tocbasic Info: usage of `tocbibind' detected on input line 11.
+Package hyperref Info: Link coloring OFF on input line 11.
 (C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1490,14 +1490,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \c@section@level=\count374
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
  (IPEB3 Project Report.out) (IPEB3 Project Report.out)
 \@outlinefile=\write5
 \openout5 = `"IPEB3 Project Report.out"'.
 
-LaTeX Info: Redefining \Ref on input line 12.
+LaTeX Info: Redefining \Ref on input line 11.
 \openout2 = `Preliminary-pages/proposaltitle.aux'.
 
 
@@ -1534,7 +1534,7 @@ LaTeX Info: Redefining \Ref on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<Graphics//Project Logo.JPG, id=177, 485.56406pt x 81.30376pt>
+<Graphics//Project Logo.JPG, id=225, 485.56406pt x 81.30376pt>
 File: Graphics//Project Logo.JPG Graphic file (type jpg)
 <use Graphics//Project Logo.JPG>
 Package pdftex.def Info: Graphics//Project Logo.JPG  used on input line 7.
@@ -1586,7 +1586,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Graphics/bottomLogo.jpg, id=178, 718.18312pt x 33.87656pt>
+<Graphics/bottomLogo.jpg, id=226, 718.18312pt x 33.87656pt>
 File: Graphics/bottomLogo.jpg Graphic file (type jpg)
 <use Graphics/bottomLogo.jpg>
 Package pdftex.def Info: Graphics/bottomLogo.jpg  used on input line 32.
@@ -1640,17 +1640,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<Graphics//signature2.PNG, id=189, 204.765pt x 94.85437pt>
+<Graphics//signature2.PNG, id=237, 204.765pt x 94.85437pt>
 File: Graphics//signature2.PNG Graphic file (type png)
 <use Graphics//signature2.PNG>
 Package pdftex.def Info: Graphics//signature2.PNG  used on input line 29.
 (pdftex.def)             Requested size: 46.63687pt x 21.60327pt.
-<Graphics//signature3.PNG, id=191, 154.32657pt x 123.46124pt>
+<Graphics//signature3.PNG, id=239, 154.32657pt x 123.46124pt>
 File: Graphics//signature3.PNG Graphic file (type png)
 <use Graphics//signature3.PNG>
 Package pdftex.def Info: Graphics//signature3.PNG  used on input line 29.
 (pdftex.def)             Requested size: 46.63687pt x 37.30992pt.
-<Graphics//signature1.PNG, id=192, 218.31563pt x 121.20282pt>
+<Graphics//signature1.PNG, id=240, 218.31563pt x 121.20282pt>
 File: Graphics//signature1.PNG Graphic file (type png)
 <use Graphics//signature1.PNG>
 Package pdftex.def Info: Graphics//signature1.PNG  used on input line 29.
@@ -1680,7 +1680,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 \include{Preliminary-pages/declaration}
+l.24 \include{Preliminary-pages/declaration}
                                              [1
 
 
@@ -1692,33 +1692,29 @@ re1.PNG>]
 
 
 (Preliminary-pages/abstract.tex
-<Graphics/2oppositeViews.png, id=204, 859.71187pt x 337.26pt>
+<Graphics/2oppositeViews.png, id=249, 859.71187pt x 337.26pt>
 File: Graphics/2oppositeViews.png Graphic file (type png)
 <use Graphics/2oppositeViews.png>
-Package pdftex.def Info: Graphics/2oppositeViews.png  used on input line 9.
+Package pdftex.def Info: Graphics/2oppositeViews.png  used on input line 15.
 (pdftex.def)             Requested size: 466.34035pt x 182.94621pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--13
-
- []
-
 ) [2
 
 
 
- <./Graphics/2oppositeViews.png>] (IPEB3 Project Report.toc [3
+ <./Graphics/2oppositeViews.png>]
+(IPEB3 Project Report.toc [3
 
 
 ])
 \tf@toc=\write6
 \openout6 = `"IPEB3 Project Report.toc"'.
 
-
-(IPEB3 Project Report.lof)
+ (IPEB3 Project Report.lof)
 \tf@lof=\write7
 \openout7 = `"IPEB3 Project Report.lof"'.
 
- (IPEB3 Project Report.lot)
+
+(IPEB3 Project Report.lot)
 \tf@lot=\write8
 \openout8 = `"IPEB3 Project Report.lot"'.
 
@@ -1727,139 +1723,235 @@ No file "IPEB3 Project Report".nls.
 \openout2 = `Main-pages/chapter1.aux'.
 
 (Main-pages/chapter1.tex
-<Graphics/acre.png, id=299, 654.19406pt x 490.08093pt>
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+<Graphics/acre.png, id=372, 654.19406pt x 490.08093pt>
 File: Graphics/acre.png Graphic file (type png)
 <use Graphics/acre.png>
-Package pdftex.def Info: Graphics/acre.png  used on input line 8.
+Package pdftex.def Info: Graphics/acre.png  used on input line 16.
 (pdftex.def)             Requested size: 373.0737pt x 279.48364pt.
- [1
-
-
- <./Graphics/acre.png>]
-<Graphics/LabelledFruta.png, id=310, 738.50906pt x 524.71031pt>
+<Graphics/LabelledFruta.png, id=378, 738.50906pt x 524.71031pt>
 File: Graphics/LabelledFruta.png Graphic file (type png)
 <use Graphics/LabelledFruta.png>
-Package pdftex.def Info: Graphics/LabelledFruta.png  used on input line 19.
+Package pdftex.def Info: Graphics/LabelledFruta.png  used on input line 29.
 (pdftex.def)             Requested size: 373.0737pt x 265.06868pt.
-<Graphics/ObjectDetection.png, id=315, 459.21562pt x 349.305pt>
+[1
+
+
+]
+<Graphics/ObjectDetection.png, id=389, 459.21562pt x 349.305pt>
 File: Graphics/ObjectDetection.png Graphic file (type png)
 <use Graphics/ObjectDetection.png>
-Package pdftex.def Info: Graphics/ObjectDetection.png  used on input line 51.
+Package pdftex.def Info: Graphics/ObjectDetection.png  used on input line 61.
 (pdftex.def)             Requested size: 373.0737pt x 283.79361pt.
- [2 <./Graphics/LabelledFruta.png>] [3 <./Graphics/ObjectDetection.png>]
-<Graphics/OpenedGripper.png, id=333, 356.83313pt x 388.45125pt>
+ [2 <./Graphics/acre.png>]
+<Graphics/OpenedGripper.png, id=400, 356.83313pt x 388.45125pt>
 File: Graphics/OpenedGripper.png Graphic file (type png)
 <use Graphics/OpenedGripper.png>
-Package pdftex.def Info: Graphics/OpenedGripper.png  used on input line 82.
+Package pdftex.def Info: Graphics/OpenedGripper.png  used on input line 91.
 (pdftex.def)             Requested size: 209.85173pt x 228.44333pt.
-<Graphics/ClosedGripper.png, id=334, 338.01282pt x 380.92313pt>
+<Graphics/ClosedGripper.png, id=401, 338.01282pt x 380.92313pt>
 File: Graphics/ClosedGripper.png Graphic file (type png)
 <use Graphics/ClosedGripper.png>
-Package pdftex.def Info: Graphics/ClosedGripper.png  used on input line 89.
+Package pdftex.def Info: Graphics/ClosedGripper.png  used on input line 98.
 (pdftex.def)             Requested size: 209.85173pt x 236.49538pt.
- [4 <./Graphics/OpenedGripper.png> <./Graphics/ClosedGripper.png>]
-<Graphics/DriveBase.png, id=347, 469.755pt x 314.67563pt>
+ [3 <./Graphics/LabelledFruta.png>] [4 <./Graphics/ObjectDetection.png>]
+<Graphics/DriveBase.png, id=420, 469.755pt x 314.67563pt>
 File: Graphics/DriveBase.png Graphic file (type png)
 <use Graphics/DriveBase.png>
-Package pdftex.def Info: Graphics/DriveBase.png  used on input line 122.
+Package pdftex.def Info: Graphics/DriveBase.png  used on input line 132.
 (pdftex.def)             Requested size: 466.34035pt x 312.3893pt.
- [5 <./Graphics/DriveBase.png>]
-<Graphics/mainCodeActivityDiagram2.png, id=356, 509.65407pt x 365.86688pt>
-File: Graphics/mainCodeActivityDiagram2.png Graphic file (type png)
-<use Graphics/mainCodeActivityDiagram2.png>
-Package pdftex.def Info: Graphics/mainCodeActivityDiagram2.png  used on input l
-ine 151.
-(pdftex.def)             Requested size: 466.34035pt x 334.78725pt.
- [6 <./Graphics/mainCodeActivityDiagram2.png>]
-<Graphics/menuCodeActivityDiagram.png, id=366, 543.53062pt x 243.15843pt>
+ [5 <./Graphics/OpenedGripper.png> <./Graphics/ClosedGripper.png>]
+<Graphics/turning90left.png, id=440, 550.30594pt x 396.7322pt>
+File: Graphics/turning90left.png Graphic file (type png)
+<use Graphics/turning90left.png>
+Package pdftex.def Info: Graphics/turning90left.png  used on input line 166.
+(pdftex.def)             Requested size: 209.85173pt x 151.28645pt.
+<Graphics/turning90right.png, id=441, 553.31718pt x 392.96812pt>
+File: Graphics/turning90right.png Graphic file (type png)
+<use Graphics/turning90right.png>
+Package pdftex.def Info: Graphics/turning90right.png  used on input line 173.
+(pdftex.def)             Requested size: 209.85173pt x 149.03561pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--181
+
+ []
+
+[6 <./Graphics/DriveBase.png>]
+<Graphics/objectDetected.png, id=448, 554.07pt x 380.17032pt>
+File: Graphics/objectDetected.png Graphic file (type png)
+<use Graphics/objectDetected.png>
+Package pdftex.def Info: Graphics/objectDetected.png  used on input line 186.
+(pdftex.def)             Requested size: 209.85173pt x 143.98474pt.
+<Graphics/objectApproached.png, id=449, 541.27219pt x 377.91188pt>
+File: Graphics/objectApproached.png Graphic file (type png)
+<use Graphics/objectApproached.png>
+Package pdftex.def Info: Graphics/objectApproached.png  used on input line 193.
+
+(pdftex.def)             Requested size: 209.85173pt x 146.5143pt.
+<Graphics/objectPushed.png, id=450, 542.77782pt x 366.61969pt>
+File: Graphics/objectPushed.png Graphic file (type png)
+<use Graphics/objectPushed.png>
+Package pdftex.def Info: Graphics/objectPushed.png  used on input line 206.
+(pdftex.def)             Requested size: 209.85173pt x 141.74478pt.
+<Graphics/objectDelivered.png, id=451, 542.025pt x 367.3725pt>
+File: Graphics/objectDelivered.png Graphic file (type png)
+<use Graphics/objectDelivered.png>
+Package pdftex.def Info: Graphics/objectDelivered.png  used on input line 213.
+(pdftex.def)             Requested size: 209.85173pt x 142.23204pt.
+ [7 <./Graphics/turning90left.png> <./Graphics/turning90right.png> <./Graphics/
+objectDetected.png> <./Graphics/objectApproached.png> <./Graphics/objectPushed.
+png> <./Graphics/objectDelivered.png>]
+<Graphics/mainCodeActivityDiagram3.png, id=464, 722.7pt x 445.665pt>
+File: Graphics/mainCodeActivityDiagram3.png Graphic file (type png)
+<use Graphics/mainCodeActivityDiagram3.png>
+Package pdftex.def Info: Graphics/mainCodeActivityDiagram3.png  used on input l
+ine 229.
+(pdftex.def)             Requested size: 466.34035pt x 287.57753pt.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 237.
+ [8 <./Graphics/mainCodeActivityDiagram3.png>]
+<Graphics/menuCodeActivityDiagram.png, id=476, 543.53062pt x 243.15843pt>
 File: Graphics/menuCodeActivityDiagram.png Graphic file (type png)
 <use Graphics/menuCodeActivityDiagram.png>
 Package pdftex.def Info: Graphics/menuCodeActivityDiagram.png  used on input li
-ne 163.
+ne 259.
 (pdftex.def)             Requested size: 466.34035pt x 208.63354pt.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 171.
- [7 <./Graphics/menuCodeActivityDiagram.png>]
-<Graphics/scrumTeam.png, id=379, 379.4175pt x 334.24875pt>
+ [9 <./Graphics/menuCodeActivityDiagram.png>]
+<Graphics/acreToML.png, id=489, 540.51938pt x 368.1253pt>
+File: Graphics/acreToML.png Graphic file (type png)
+<use Graphics/acreToML.png>
+Package pdftex.def Info: Graphics/acreToML.png  used on input line 298.
+(pdftex.def)             Requested size: 209.85173pt x 142.9167pt.
+<Graphics/acreToHZ.png, id=490, 542.025pt x 369.63094pt>
+File: Graphics/acreToHZ.png Graphic file (type png)
+<use Graphics/acreToHZ.png>
+Package pdftex.def Info: Graphics/acreToHZ.png  used on input line 305.
+(pdftex.def)             Requested size: 209.85173pt x 143.10641pt.
+<Graphics/opt1.png, id=495, 292.84406pt x 240.9pt>
+File: Graphics/opt1.png Graphic file (type png)
+<use Graphics/opt1.png>
+Package pdftex.def Info: Graphics/opt1.png  used on input line 320.
+(pdftex.def)             Requested size: 139.90352pt x 115.09033pt.
+<Graphics/opt2.png, id=496, 234.1247pt x 237.88875pt>
+File: Graphics/opt2.png Graphic file (type png)
+<use Graphics/opt2.png>
+Package pdftex.def Info: Graphics/opt2.png  used on input line 327.
+(pdftex.def)             Requested size: 139.90352pt x 142.16081pt.
+<Graphics/opt3.png, id=497, 268.75406pt x 238.64156pt>
+File: Graphics/opt3.png Graphic file (type png)
+<use Graphics/opt3.png>
+Package pdftex.def Info: Graphics/opt3.png  used on input line 334.
+(pdftex.def)             Requested size: 139.90352pt x 124.22905pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./export-1.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<export-1.pdf, id=498, 598.15468pt x 846.0408pt>
+File: export-1.pdf Graphic file (type pdf)
+<use export-1.pdf>
+Package pdftex.def Info: export-1.pdf  used on input line 346.
+(pdftex.def)             Requested size: 443.0219pt x 626.64133pt.
+[10 <./Graphics/acreToML.png> <./Graphics/acreToHZ.png> <./Graphics/opt1.png> <
+./Graphics/opt2.png> <./Graphics/opt3.png>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (3.67307pt too high) has occurred while \output is active []
+
+
+[11 <./export-1.pdf>]
+<Graphics/scrumTeam.png, id=534, 379.4175pt x 334.24875pt>
 File: Graphics/scrumTeam.png Graphic file (type png)
 <use Graphics/scrumTeam.png>
-Package pdftex.def Info: Graphics/scrumTeam.png  used on input line 206.
+Package pdftex.def Info: Graphics/scrumTeam.png  used on input line 369.
 (pdftex.def)             Requested size: 279.80705pt x 246.49866pt.
-
-[8 <./Graphics/scrumTeam.png>]
-<Graphics/effort1.png, id=387, 283.0575pt x 204.01219pt>
+ [12 <./Graphics/scrumTeam.png>]
+<Graphics/effort1.png, id=542, 283.0575pt x 204.01219pt>
 File: Graphics/effort1.png Graphic file (type png)
 <use Graphics/effort1.png>
-Package pdftex.def Info: Graphics/effort1.png  used on input line 221.
+Package pdftex.def Info: Graphics/effort1.png  used on input line 386.
 (pdftex.def)             Requested size: 283.0568pt x 204.01169pt.
-<Graphics/effort2.png, id=388, 279.29344pt x 203.25937pt>
+<Graphics/effort2.png, id=543, 279.29344pt x 203.25937pt>
 File: Graphics/effort2.png Graphic file (type png)
 <use Graphics/effort2.png>
-Package pdftex.def Info: Graphics/effort2.png  used on input line 223.
+Package pdftex.def Info: Graphics/effort2.png  used on input line 388.
 (pdftex.def)             Requested size: 279.29276pt x 203.25887pt.
 File: Graphics/effort1.png Graphic file (type png)
 <use Graphics/effort1.png>
-Package pdftex.def Info: Graphics/effort1.png  used on input line 225.
+Package pdftex.def Info: Graphics/effort1.png  used on input line 390.
 (pdftex.def)             Requested size: 283.0568pt x 204.01169pt.
-<Graphics/effort5.png, id=389, 284.56313pt x 206.27063pt>
+<Graphics/effort5.png, id=544, 284.56313pt x 206.27063pt>
 File: Graphics/effort5.png Graphic file (type png)
 <use Graphics/effort5.png>
-Package pdftex.def Info: Graphics/effort5.png  used on input line 227.
+Package pdftex.def Info: Graphics/effort5.png  used on input line 392.
 (pdftex.def)             Requested size: 284.56242pt x 206.27011pt.
-<Graphics/effort4.png, id=390, 289.08pt x 206.27063pt>
+<Graphics/effort4.png, id=545, 289.08pt x 206.27063pt>
 File: Graphics/effort4.png Graphic file (type png)
 <use Graphics/effort4.png>
-Package pdftex.def Info: Graphics/effort4.png  used on input line 229.
+Package pdftex.def Info: Graphics/effort4.png  used on input line 394.
 (pdftex.def)             Requested size: 289.07928pt x 206.27011pt.
-<Graphics/effort3.png, id=391, 283.81032pt x 204.01219pt>
+<Graphics/effort3.png, id=546, 283.81032pt x 204.01219pt>
 File: Graphics/effort3.png Graphic file (type png)
 <use Graphics/effort3.png>
-Package pdftex.def Info: Graphics/effort3.png  used on input line 231.
+Package pdftex.def Info: Graphics/effort3.png  used on input line 396.
 (pdftex.def)             Requested size: 283.80962pt x 204.01169pt.
 File: Graphics/effort1.png Graphic file (type png)
 <use Graphics/effort1.png>
-Package pdftex.def Info: Graphics/effort1.png  used on input line 233.
+Package pdftex.def Info: Graphics/effort1.png  used on input line 398.
 (pdftex.def)             Requested size: 283.0568pt x 204.01169pt.
 File: Graphics/effort4.png Graphic file (type png)
 <use Graphics/effort4.png>
-Package pdftex.def Info: Graphics/effort4.png  used on input line 235.
+Package pdftex.def Info: Graphics/effort4.png  used on input line 400.
 (pdftex.def)             Requested size: 289.07928pt x 206.27011pt.
 File: Graphics/effort3.png Graphic file (type png)
 <use Graphics/effort3.png>
-Package pdftex.def Info: Graphics/effort3.png  used on input line 237.
+Package pdftex.def Info: Graphics/effort3.png  used on input line 402.
 (pdftex.def)             Requested size: 283.80962pt x 204.01169pt.
 File: Graphics/effort4.png Graphic file (type png)
 <use Graphics/effort4.png>
-Package pdftex.def Info: Graphics/effort4.png  used on input line 239.
+Package pdftex.def Info: Graphics/effort4.png  used on input line 404.
 (pdftex.def)             Requested size: 289.07928pt x 206.27011pt.
 
-Overfull \hbox (9.07492pt too wide) in paragraph at lines 217--242
+Overfull \hbox (9.07492pt too wide) in paragraph at lines 382--407
  [][] 
  []
 
-[9 <./Graphics/effort1.png> <./Graphics/effort2.png> <./Graphics/effort5.png> <
-./Graphics/effort4.png> <./Graphics/effort3.png>]
-<Graphics/effort22.png, id=404, 258.201pt x 190.311pt>
+<Graphics/effort22.png, id=547, 258.201pt x 190.311pt>
 File: Graphics/effort22.png Graphic file (type png)
 <use Graphics/effort22.png>
-Package pdftex.def Info: Graphics/effort22.png  used on input line 252.
+Package pdftex.def Info: Graphics/effort22.png  used on input line 417.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
-<Graphics/effort12.png, id=405, 258.201pt x 190.311pt>
+<Graphics/effort12.png, id=548, 258.201pt x 190.311pt>
 File: Graphics/effort12.png Graphic file (type png)
 <use Graphics/effort12.png>
-Package pdftex.def Info: Graphics/effort12.png  used on input line 258.
+Package pdftex.def Info: Graphics/effort12.png  used on input line 423.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
-File: Graphics/effort22.png Graphic file (type png)
-<use Graphics/effort22.png>
-Package pdftex.def Info: Graphics/effort22.png  used on input line 264.
+<Graphics/effort52.png, id=549, 258.201pt x 190.311pt>
+File: Graphics/effort52.png Graphic file (type png)
+<use Graphics/effort52.png>
+Package pdftex.def Info: Graphics/effort52.png  used on input line 429.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--267
+Underfull \hbox (badness 10000) in paragraph at lines 412--432
 
  []
 
 
-Overfull \hbox (4.56714pt too wide) in paragraph at lines 247--267
+Overfull \hbox (4.56714pt too wide) in paragraph at lines 412--432
 [] [] [] 
  []
 
@@ -1877,72 +1969,274 @@ NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
  unbounded coords=jump). 
 NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
  unbounded coords=jump). 
-<Graphics/effortN.png, id=406, 294.34969pt x 213.04594pt>
+<Graphics/effortN.png, id=550, 294.34969pt x 213.04594pt>
 File: Graphics/effortN.png Graphic file (type png)
 <use Graphics/effortN.png>
-Package pdftex.def Info: Graphics/effortN.png  used on input line 307.
+Package pdftex.def Info: Graphics/effortN.png  used on input line 474.
 (pdftex.def)             Requested size: 294.34895pt x 213.04541pt.
-[10 <./Graphics/effort22.png> <./Graphics/effort12.png> <./Graphics/effortN.png
->]
-<Graphics/effort32.png, id=415, 258.201pt x 190.311pt>
+[13 <./Graphics/effort1.png> <./Graphics/effort2.png> <./Graphics/effort5.png> 
+<./Graphics/effort4.png> <./Graphics/effort3.png> <./Graphics/effort22.png> <./
+Graphics/effort12.png> <./Graphics/effort52.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 485--487
+
+ []
+
+[14 <./Graphics/effortN.png>]
+<Graphics/effort32.png, id=571, 258.201pt x 190.311pt>
 File: Graphics/effort32.png Graphic file (type png)
 <use Graphics/effort32.png>
-Package pdftex.def Info: Graphics/effort32.png  used on input line 323.
+Package pdftex.def Info: Graphics/effort32.png  used on input line 496.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 
-Underfull \hbox (badness 3735) in paragraph at lines 322--324
+Underfull \hbox (badness 4291) in paragraph at lines 495--497
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) user\T1/ptm/m/n/12 (+20) , I
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--497
 \T1/ptm/m/n/12 (+20) to place the
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 322--324
-\T1/ptm/m/n/12 (+20) right fruit in
+Underfull \hbox (badness 4193) in paragraph at lines 495--497
+\T1/ptm/b/n/12 (+20) right fruit \T1/ptm/m/n/12 (+20) in
+ []
+
+<Graphics/effort42.png, id=572, 258.201pt x 190.311pt>
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 502.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 7944) in paragraph at lines 501--503
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) user\T1/ptm/m/n/12 (+20) , I
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 501--503
+\T1/ptm/m/n/12 (+20) don't want the
+ []
+
+File: Graphics/effort52.png Graphic file (type png)
+<use Graphics/effort52.png>
+Package pdftex.def Info: Graphics/effort52.png  used on input line 508.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 3291) in paragraph at lines 507--509
+\T1/ptm/m/n/12 (+20) for the \T1/ptm/b/n/12 (+20) spec-i-fied
  []
 
 File: Graphics/effort12.png Graphic file (type png)
 <use Graphics/effort12.png>
-Package pdftex.def Info: Graphics/effort12.png  used on input line 329.
+Package pdftex.def Info: Graphics/effort12.png  used on input line 514.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
-[]\T1/ptm/m/n/12 (+20) As a user, I
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) user\T1/ptm/m/n/12 (+20) ,
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 328--330
-\T1/ptm/m/n/12 (+20) don't want the
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
+\T1/ptm/m/n/12 (+20) I want the
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 328--330
-\T1/ptm/m/n/12 (+20) the home zone
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
+\T1/ptm/m/n/12 (+20) robot to be
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
+\T1/ptm/m/n/12 (+20) com-pletely
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
+\T1/ptm/b/n/12 (+20) au-tonomous\T1/ptm/m/n/12 (+20) .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--517
+
+ []
+
+PGFPlots: reading {Sprint2.csv}
+PGFPlots: reading {Sprint2.csv}
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+File: Graphics/effortN.png Graphic file (type png)
+<use Graphics/effortN.png>
+Package pdftex.def Info: Graphics/effortN.png  used on input line 556.
+(pdftex.def)             Requested size: 294.34895pt x 213.04541pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--570
+
+ []
+
+[15 <./Graphics/effort32.png> <./Graphics/effort42.png>]
+<Graphics/effort122.png, id=582, 292.84406pt x 210.03468pt>
+File: Graphics/effort122.png Graphic file (type png)
+<use Graphics/effort122.png>
+Package pdftex.def Info: Graphics/effort122.png  used on input line 574.
+(pdftex.def)             Requested size: 292.84334pt x 210.03416pt.
+File: Graphics/effort12.png Graphic file (type png)
+<use Graphics/effort12.png>
+Package pdftex.def Info: Graphics/effort12.png  used on input line 577.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 581.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort32.png Graphic file (type png)
+<use Graphics/effort32.png>
+Package pdftex.def Info: Graphics/effort32.png  used on input line 585.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 589.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 2158) in paragraph at lines 588--590
+\T1/ptm/m/n/12 (+20) the code to be \T1/ptm/b/n/12 (+20) ef-fi-cient\T1/ptm/m/n
+/12 (+20) .
+ []
+
+File: Graphics/effort12.png Graphic file (type png)
+<use Graphics/effort12.png>
+Package pdftex.def Info: Graphics/effort12.png  used on input line 595.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort12.png Graphic file (type png)
+<use Graphics/effort12.png>
+Package pdftex.def Info: Graphics/effort12.png  used on input line 598.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+<Graphics/effort152.png, id=583, 293.59688pt x 204.765pt>
+File: Graphics/effort152.png Graphic file (type png)
+<use Graphics/effort152.png>
+Package pdftex.def Info: Graphics/effort152.png  used on input line 604.
+(pdftex.def)             Requested size: 293.59615pt x 204.76448pt.
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 607.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 1122) in paragraph at lines 606--608
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) user\T1/ptm/m/n/12 (+20) , I d
+on't want
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 606--608
+\T1/ptm/m/n/12 (+20) home zone \T1/ptm/b/n/12 (+20) with-out the
+ []
+
+File: Graphics/effort52.png Graphic file (type png)
+<use Graphics/effort52.png>
+Package pdftex.def Info: Graphics/effort52.png  used on input line 611.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort12.png Graphic file (type png)
+<use Graphics/effort12.png>
+Package pdftex.def Info: Graphics/effort12.png  used on input line 615.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort32.png Graphic file (type png)
+<use Graphics/effort32.png>
+Package pdftex.def Info: Graphics/effort32.png  used on input line 619.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 File: Graphics/effort22.png Graphic file (type png)
 <use Graphics/effort22.png>
-Package pdftex.def Info: Graphics/effort22.png  used on input line 335.
+Package pdftex.def Info: Graphics/effort22.png  used on input line 623.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 
-Underfull \hbox (badness 4608) in paragraph at lines 334--336
-\T1/ptm/m/n/12 (+20) for the spec-i-fied
+Overfull \hbox (13.1272pt too wide) in paragraph at lines 572--626
+[] | [] | [] 
  []
 
-File: Graphics/effort22.png Graphic file (type png)
-<use Graphics/effort22.png>
-Package pdftex.def Info: Graphics/effort22.png  used on input line 341.
+[16 <./Graphics/effort122.png> <./Graphics/effort152.png>]
+File: Graphics/effort12.png Graphic file (type png)
+<use Graphics/effort12.png>
+Package pdftex.def Info: Graphics/effort12.png  used on input line 637.
 (pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
 
-Underfull \hbox (badness 4608) in paragraph at lines 340--342
-\T1/ptm/m/n/12 (+20) for the spec-i-fied
+Underfull \hbox (badness 1331) in paragraph at lines 636--638
+\T1/ptm/m/n/12 (+20) to \T1/ptm/b/n/12 (+20) keep count
+ []
+
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 643.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+File: Graphics/effort52.png Graphic file (type png)
+<use Graphics/effort52.png>
+Package pdftex.def Info: Graphics/effort52.png  used on input line 649.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 7944) in paragraph at lines 648--650
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) user\T1/ptm/m/n/12 (+20) , I
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--344
+Underfull \hbox (badness 1960) in paragraph at lines 648--650
+\T1/ptm/m/n/12 (+20) robot to search
+ []
+
+File: Graphics/effort42.png Graphic file (type png)
+<use Graphics/effort42.png>
+Package pdftex.def Info: Graphics/effort42.png  used on input line 655.
+(pdftex.def)             Requested size: 258.20036pt x 190.31052pt.
+
+Underfull \hbox (badness 6876) in paragraph at lines 654--656
+[]\T1/ptm/m/n/12 (+20) As a \T1/ptm/b/n/12 (+20) de-vel-
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 654--656
+\T1/ptm/m/n/12 (+20) the the code
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--658
 
  []
 
-) [11 <./Graphics/effort32.png>] (IPEB3 Project Report.bbl
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+
+Overfull \hbox (11.50803pt too wide) in paragraph at lines 632--658
+[] [] [] [] 
+ []
+
+PGFPlots: reading {Sprint3.csv}
+PGFPlots: reading {Sprint3.csv}
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+File: Graphics/effortN.png Graphic file (type png)
+<use Graphics/effortN.png>
+Package pdftex.def Info: Graphics/effortN.png  used on input line 698.
+(pdftex.def)             Requested size: 294.34895pt x 213.04541pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
+
+ []
+
+[17] (IPEB3 Project Report.bbl
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 2.
 
 (C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
@@ -1952,17 +2246,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-0.
-
-(C:\Users\ROG\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-[12
+))
+[18] [19
 
 
-] [13]
+]
 \openout2 = `Main-pages/app1.aux'.
 
  (Main-pages/app1.tex
@@ -1973,7 +2261,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 5--5
 [][][][][][][] 
  []
 
-[14
+[20
 
 ]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 47--47
@@ -1985,7 +2273,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 70--70
 [][][][][][][] 
  []
 
-[15]
+[21]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 86--86
 [][][][][][][] 
  []
@@ -1995,7 +2283,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 102--102
 [][][][][][][] 
  []
 
-[16]
+[22]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 116--116
 [][][][][][][] 
  []
@@ -2005,7 +2293,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 137--137
 [][][][][][][] 
  []
 
-[17]
+[23]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 155--155
 [][][][][][][] 
  []
@@ -2015,39 +2303,42 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 171--171
 [][][][][][][] 
  []
 
-[18] [19]
+[24] [25]
 Overfull \hbox (6.0pt too wide) in paragraph at lines 254--254
 [][][][][][][] 
  []
 
-[20]) [21] 
+[26]) [27] 
 AED: lastpage setting LastPage
 (IPEB3 Project Report.aux (Preliminary-pages/proposaltitle.aux)
 (Preliminary-pages/declaration.aux) (Preliminary-pages/abstract.aux)
 (Main-pages/chapter1.aux) (Main-pages/app1.aux))
 Package rerunfilecheck Info: File `"IPEB3 Project Report".out' has not changed.
 
-(rerunfilecheck)             Checksum: 8E9D4CDF6CD6C2311EA84B732B1AF7DA;5787.
+(rerunfilecheck)             Checksum: AB48107C1FCEE60088A9227CB11A7AFA;8554.
  ) 
 Here is how much of TeX's memory you used:
- 49586 strings out of 478659
- 1131889 string characters out of 2846869
- 1984125 words of memory out of 3000000
- 66157 multiletter control sequences out of 15000+600000
- 495009 words of font info for 316 fonts, out of 8000000 for 9000
+ 49953 strings out of 478659
+ 1139215 string characters out of 2846869
+ 1991291 words of memory out of 3000000
+ 66432 multiletter control sequences out of 15000+600000
+ 497773 words of font info for 350 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,19n,109p,1181b,2257s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,19n,109p,1181b,2259s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\ROG\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt10
 00.pk> <C:\Users\ROG\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 tt1200.pk>{C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
 nc}<C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
-b8a.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
-a.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on "IPEB3 Project Report.pdf" (26 pages, 2808888 bytes).
+mmi10.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/symbol/usyr.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmb8a.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmr8a.pfb><C:/Users/ROG/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on "IPEB3 Project Report.pdf" (32 pages, 3967451 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
- 313 named destinations out of 1000 (max. 500000)
- 108587 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1088 PDF objects out of 1200 (max. 8388607)
+ 339 named destinations out of 1000 (max. 500000)
+ 106709 words of extra memory for PDF output out of 106986 (max. 10000000)
 
